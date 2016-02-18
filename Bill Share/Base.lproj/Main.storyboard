@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="b6j-6G-sgE">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="RaP-90-uBI">
+            <objects>
+                <viewController id="b6j-6G-sgE" customClass="ViewController" customModule="Bill_Share" customModuleProvider="target" colorLabel="IBBuiltInLabel-Green" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vkN-ho-4Ub"/>
+                        <viewControllerLayoutGuide type="bottom" id="O8T-0a-Ogh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GoN-tD-GOV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Bill:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgr-DO-2bi">
+                                <rect key="frame" x="20" y="105" width="100" height="34"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="g72-hn-8Lz"/>
+                                    <constraint firstAttribute="width" constant="100" id="xt8-Vd-1pU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="24"/>
+                                <color key="textColor" red="0.22187063100000001" green="0.1019253656" blue="0.048490159210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Total Bill Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6PB-xq-RQV">
+                                <rect key="frame" x="20" y="154" width="560" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7Zs-sS-gOm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="txtAmoutValueChanged:" destination="b6j-6G-sgE" eventType="valueChanged" id="E4E-bj-cdl"/>
+                                    <action selector="txtAmoutValueChanged:" destination="b6j-6G-sgE" eventType="editingChanged" id="leC-1W-gsm"/>
+                                    <outlet property="delegate" destination="b6j-6G-sgE" id="oCf-gH-794"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip % :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVN-gz-rWE">
+                                <rect key="frame" x="20" y="198" width="100" height="39"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="Rkc-KY-SJM"/>
+                                    <constraint firstAttribute="width" constant="100" id="mdI-Qg-Kds"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="24"/>
+                                <color key="textColor" red="0.22187063100000001" green="0.1019253656" blue="0.048490159210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S08-w2-vhj">
+                                <rect key="frame" x="20" y="257" width="560" height="37"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.99821335079999995" blue="0.98068815470000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Vyv-UR-i0d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="24"/>
+                                <color key="textColor" red="0.22187063100000001" green="0.1019253656" blue="0.048490159210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.060210965569999997" green="0.12061292680000001" blue="0.17466744779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.93406635520000003" green="0.95650917290000004" blue="0.085167460139999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Split 1 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTs-ZE-a95">
+                                <rect key="frame" x="20" y="306" width="61.5" height="39"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="8XG-7e-MzX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="24"/>
+                                <color key="textColor" red="0.22187063100000001" green="0.1019253656" blue="0.048490159210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yp4-9e-ehf">
+                                <rect key="frame" x="20" y="358" width="560" height="37"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.91433447599999995" green="0.43756234649999998" blue="0.32277661559999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Uhp-cQ-nOH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="24"/>
+                                <color key="textColor" red="0.22187063100000001" green="0.1019253656" blue="0.048490159210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.060210965569999997" green="0.12061292680000001" blue="0.17466744779999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.93406635520000003" green="0.95650917290000004" blue="0.085167460139999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iLy-Jb-bbB">
+                                <rect key="frame" x="20" y="35" width="560" height="62"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="MUj-Nt-7bn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="35"/>
+                                <color key="textColor" red="0.70132004309999996" green="0.0" blue="0.0" alpha="0.85330784569999996" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="R40-Vb-mtw">
+                                <rect key="frame" x="113" y="315" width="469" height="31"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sEb-Ee-E6f"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="noOfPersonValueChanged:" destination="b6j-6G-sgE" eventType="valueChanged" id="1sZ-Iq-mhY"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.14999999999999999" minValue="0.0" maxValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="g0o-2T-wGh">
+                                <rect key="frame" x="113" y="203" width="469" height="31"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wyA-uz-LEg"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="TipPercentageSliderValueChanged:" destination="b6j-6G-sgE" eventType="valueChanged" id="ewa-om-7CN"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="R40-Vb-mtw" secondAttribute="trailing" constant="20" id="00x-ca-aey"/>
+                            <constraint firstAttribute="trailing" secondItem="6PB-xq-RQV" secondAttribute="trailing" constant="20" id="0ng-Np-e31"/>
+                            <constraint firstAttribute="trailing" secondItem="g0o-2T-wGh" secondAttribute="trailing" constant="20" id="1AH-Vz-F2H"/>
+                            <constraint firstAttribute="trailing" secondItem="iLy-Jb-bbB" secondAttribute="trailing" constant="20" id="2zc-bj-mG1"/>
+                            <constraint firstItem="iLy-Jb-bbB" firstAttribute="leading" secondItem="GoN-tD-GOV" secondAttribute="leading" constant="20" id="531-uV-Q1s"/>
+                            <constraint firstItem="g0o-2T-wGh" firstAttribute="leading" secondItem="EVN-gz-rWE" secondAttribute="trailing" constant="-5" id="6GL-zy-qph"/>
+                            <constraint firstItem="g0o-2T-wGh" firstAttribute="top" secondItem="6PB-xq-RQV" secondAttribute="bottom" constant="19" id="73T-XX-bg5"/>
+                            <constraint firstItem="iLy-Jb-bbB" firstAttribute="top" secondItem="vkN-ho-4Ub" secondAttribute="bottom" constant="15" id="C9X-8F-naN"/>
+                            <constraint firstItem="S08-w2-vhj" firstAttribute="leading" secondItem="GoN-tD-GOV" secondAttribute="leading" constant="20" id="E0l-1v-nGo"/>
+                            <constraint firstAttribute="trailing" secondItem="yp4-9e-ehf" secondAttribute="trailing" constant="20" id="GIV-Rd-wn0"/>
+                            <constraint firstAttribute="trailing" secondItem="S08-w2-vhj" secondAttribute="trailing" constant="20" id="GaL-hd-Irr"/>
+                            <constraint firstItem="yp4-9e-ehf" firstAttribute="leading" secondItem="GoN-tD-GOV" secondAttribute="leading" constant="20" id="GxH-BI-b2J"/>
+                            <constraint firstItem="R40-Vb-mtw" firstAttribute="leading" secondItem="yTs-ZE-a95" secondAttribute="trailing" constant="33.5" id="R78-BX-ThZ"/>
+                            <constraint firstItem="yp4-9e-ehf" firstAttribute="top" secondItem="R40-Vb-mtw" secondAttribute="bottom" constant="13" id="RuW-wq-YKw"/>
+                            <constraint firstItem="EVN-gz-rWE" firstAttribute="leading" secondItem="GoN-tD-GOV" secondAttribute="leading" constant="20" id="ShN-sU-aBC"/>
+                            <constraint firstItem="Sgr-DO-2bi" firstAttribute="leading" secondItem="GoN-tD-GOV" secondAttribute="leading" constant="20" id="WYG-Xp-ce7"/>
+                            <constraint firstItem="yTs-ZE-a95" firstAttribute="leading" secondItem="GoN-tD-GOV" secondAttribute="leading" constant="20" id="ccs-c3-CjU"/>
+                            <constraint firstItem="Sgr-DO-2bi" firstAttribute="top" secondItem="iLy-Jb-bbB" secondAttribute="bottom" constant="8" id="enU-37-zYt"/>
+                            <constraint firstItem="EVN-gz-rWE" firstAttribute="top" secondItem="6PB-xq-RQV" secondAttribute="bottom" constant="14" id="i3E-qf-Rba"/>
+                            <constraint firstItem="yTs-ZE-a95" firstAttribute="top" secondItem="S08-w2-vhj" secondAttribute="bottom" constant="12" id="qoA-1U-JP0"/>
+                            <constraint firstItem="R40-Vb-mtw" firstAttribute="top" secondItem="S08-w2-vhj" secondAttribute="bottom" constant="21" id="stO-qs-Jjg"/>
+                            <constraint firstItem="S08-w2-vhj" firstAttribute="top" secondItem="EVN-gz-rWE" secondAttribute="bottom" constant="20" id="tKn-PQ-kzu"/>
+                            <constraint firstItem="6PB-xq-RQV" firstAttribute="leading" secondItem="GoN-tD-GOV" secondAttribute="leading" constant="20" id="wNd-ml-mIO"/>
+                            <constraint firstItem="6PB-xq-RQV" firstAttribute="top" secondItem="Sgr-DO-2bi" secondAttribute="bottom" constant="15" id="zQb-3v-BY5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblFinal" destination="yp4-9e-ehf" id="aFJ-lP-TBb"/>
+                        <outlet property="lblTipPercentage" destination="EVN-gz-rWE" id="GFG-6g-vRI"/>
+                        <outlet property="lblTotal" destination="S08-w2-vhj" id="JCF-bx-fPv"/>
+                        <outlet property="lblnoOfPeople" destination="yTs-ZE-a95" id="cOt-gD-HjT"/>
+                        <outlet property="sliderNoOfPeople" destination="R40-Vb-mtw" id="1wg-QW-APE"/>
+                        <outlet property="sliderTipPercetage" destination="g0o-2T-wGh" id="8uQ-LI-oMa"/>
+                        <outlet property="txtAmount" destination="6PB-xq-RQV" id="iz2-Xq-Xjq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p2D-9v-1yI" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="347" y="90"/>
+        </scene>
+    </scenes>
+</document>
