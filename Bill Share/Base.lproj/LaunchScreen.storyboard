@@ -16,27 +16,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cooltext166364715654241" translatesAutoresizingMaskIntoConstraints="NO" id="E7e-CM-Ayr">
-                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="alW-Io-k1F">
+                                <rect key="frame" x="160.5" y="178" width="279" height="243"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="NcC-qG-Qg5"/>
-                                    <constraint firstAttribute="height" constant="128" id="pEm-n8-Bhw"/>
+                                    <constraint firstAttribute="height" constant="243" id="l8C-SB-IAF"/>
+                                    <constraint firstAttribute="width" constant="279" id="ne9-3J-5G2"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMh-YS-tbV">
+                                <rect key="frame" x="186" y="571" width="228" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="228" id="Pp5-1H-VfJ"/>
+                                    <constraint firstAttribute="height" constant="21" id="VNL-Vs-qrN"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Developed By : @Amrit Sapkota">
+                                        <attributes>
+                                            <color key="NSColor" red="0.055019669234752655" green="0.87698006629943848" blue="0.82602447271347046" alpha="0.69597739361702127" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.34743517637252808" green="0.90330898761749268" blue="0.90990442037582397" alpha="0.31662788120567376" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="E7e-CM-Ayr" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="SQS-Io-B1f"/>
-                            <constraint firstItem="E7e-CM-Ayr" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="su6-eK-htm"/>
+                            <constraint firstItem="alW-Io-k1F" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="1qa-b2-AT7"/>
+                            <constraint firstItem="alW-Io-k1F" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6xL-3w-9HY"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="WMh-YS-tbV" secondAttribute="bottom" constant="8" id="RuY-Be-eBe"/>
+                            <constraint firstItem="WMh-YS-tbV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="SiA-9x-Jkv"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="353" y="287"/>
+            <point key="canvasLocation" x="299" y="150"/>
         </scene>
     </scenes>
     <resources>
-        <image name="cooltext166364715654241" width="410" height="108"/>
+        <image name="3" width="2550" height="1974"/>
     </resources>
 </document>

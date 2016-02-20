@@ -28,6 +28,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         lblTipPercentage.text = String(format: "Tip %d%% :", arguments: [Int(calculate.tipPercentage*100)])
         
+      
         
     }
 
@@ -71,6 +72,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
 
     
+    
     func updateUI(){
         lblTotal.text = String(format:"Total: $%0.1f Tip: $%0.1f", arguments:[calculate.amountBeforeTip, calculate.tipAmount])
         var a:Int;
@@ -81,7 +83,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         lblFinal.text = "Pay $ \(b/a)"
     }
 
-    
+  
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
       
@@ -94,6 +96,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     
+   
+ 
     
     
     
